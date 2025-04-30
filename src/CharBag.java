@@ -67,8 +67,7 @@ public class CharBag {
         String returnString = "";
         returnString += "CharBag{";
         for(char c = 'a'; c <= 'z'; c++){
-            returnString += c;
-            returnString += ":" + charCounts[charToIndex(c)] + ", ";
+            returnString += c + ":" + charCounts[charToIndex(c)] + ", ";
         }
         returnString += LetterSample.STOP + ":" + charCounts[26] + "}";
         return returnString;
