@@ -30,7 +30,7 @@ public class Trie <T> {
     /**
      * set data of node associated with word
      */
-    public void put(String word, T data){
+    public T put(String word, T data){
        TrieNode<T> node = getNode(word);
        node.setData(data);
     }
