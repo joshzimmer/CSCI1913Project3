@@ -32,6 +32,8 @@ public class Trie <T> {
      */
     public T put(String word, T data){
        TrieNode<T> node = getNode(word);
+       T returnData = node.getData();
        node.setData(data);
+       return returnData;
     }
 }
