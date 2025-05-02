@@ -1,3 +1,4 @@
+// @Author Josh Zimmer
 import java.util.Random;
 public class CharBag {
     private int[] charCounts = new int[27];

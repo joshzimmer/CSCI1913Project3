@@ -1,3 +1,4 @@
+// @Author Josh Zimmer
 public class Trie <T> {
     private TrieNode <T> root;
 

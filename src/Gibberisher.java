@@ -1,3 +1,4 @@
+// @Author Josh Zimmer
 public class Gibberisher {
     private Trie<CharBag> model;
     private int segmentLength;

@@ -37,5 +37,6 @@ public class GibberisherMain {
 
         // some code to get you started:
         printSome(runGibberisherTest(3, 2000), 20);
+        runGibberisherTest(4, 2000);
     }
 }

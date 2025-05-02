@@ -1,3 +1,4 @@
+// @Author Josh Zimmer
 public class TrieNode <T> {
     private T data;
     private TrieNode<T>[] children = new TrieNode[26];
