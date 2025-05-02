@@ -18,7 +18,7 @@ public class CharBag {
      * helper function that converts newChar to associated array index
      * any non english letters converted to -1
      */
-    public int charToIndex(char newChar){
+    private int charToIndex(char newChar){
         newChar = Character.toLowerCase(newChar);
         if(newChar >= 'a' && newChar <= 'z') {
             return (int)newChar - 97;
