@@ -6,7 +6,7 @@ public class Testing {
         String[] words = {"apples", "banana", "grape", "orange", "peel"};
         for(int i = 0; i<5; i++) {
             LetterSample[] samples = LetterSample.toSamples(words[i], 3);
-            for(int j = 3; j<samples.length; j++) {
+            for(int j = 0; j<samples.length; j++) {
                 System.out.println(samples[j].getSegment());
                 System.out.println(samples[j].getNextLetter());
                 System.out.println(samples[j].getSegment().length());

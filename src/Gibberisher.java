@@ -18,18 +18,17 @@ public class Gibberisher {
      * Takes segment string and updates nodes for that segment
      */
     private void updateNodes(LetterSample sample) {
-        String segment = sample.getSegment() + sample.getNextLetter();
-        for (int i = 0; i < (segment.length()); i++) {
-            CharBag currentCharBag = model.get(segment.substring(0, i));
-            boolean newSegment = false;
-            // if no node for this current segment
-            if (currentCharBag == null) {
-                currentCharBag = new CharBag();
-                model.put(segment.substring(0, i), currentCharBag);
+        String segment = sample.getSegment();
+        char nextChar = sample.getNextLetter();
+        CharBag currentCharBag = model.get(segment);
+        // if no node for this current segment
+        if (currentCharBag == null) {
+            currentCharBag = new CharBag();
+            model.put(segment, currentCharBag);
             }
-            currentCharBag.add(segment.charAt(i));
+        currentCharBag.add(nextChar);
 
-        }
+
     }
 
     /**
@@ -37,7 +36,7 @@ public class Gibberisher {
      * sample
      */
     private void importSegments(LetterSample[] samples){
-        for(int i = segmentLength; i < samples.length; i++){
+        for(int i = 0; i < samples.length; i++){
             updateNodes(samples[i]);
         }
     }
