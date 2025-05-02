@@ -27,7 +27,6 @@ public class Gibberisher {
                 currentCharBag = new CharBag();
                 model.put(segment.substring(0, i), currentCharBag);
             }
-            if()
             currentCharBag.add(segment.charAt(i));
 
         }
